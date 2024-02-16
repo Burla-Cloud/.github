@@ -14,7 +14,7 @@
     The goal of Burla is to make it completely seamless to run code on any hardware, in any environment, everything should <i>just work</i>™.<br>
     Here are some features we'll need:
     </p>
-    <table>
+    <table border="0">
         <tr>
             <td>
             ⦁ 🐳 Docker Support: Run code in any docker image by passing <code>image=&lt;image-uri&gt;</code>.<br>
