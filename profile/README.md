@@ -1,12 +1,12 @@
 <br></br>
 
 <div align="center">
-    <img src="/media/logo.png" alt="burla_logo" title="Burla" width="15%" height="auto" />
+    <img src="/media/logo.png" alt="burla_logo" title="Burla" width="20%" height="auto" />
     <h4>Burla is a python package that makes it incredibly simple to run code on other computers.</h4>
     <p>Burla only has one function:  <code>remote_parallel_map</code>.<br>
     This function only requires two arguments, here's how it works:</p>
     <br></br>
-    <img src="/media/remote_parallel_map.png" alt="remote_parallel_map" title="Example" width="80%" height="auto" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/remote_parallel_map.png" alt="remote_parallel_map" title="Example" width="80%" height="auto" />
     <br></br>
     <p>In this example Burla will execute <code>my_function</code> on every input in <code>my_inputs</code>, at the same time, each on a separate computer in the cloud.<br>
     Burla is <b>fast</b> and <b>scalable</b>. Code starts running within <u>1 second</u> of calling <code>remote_parallel_map</code> on up to <u>1000 CPU's</u>.
