@@ -1,42 +1,46 @@
 <br></br>
 
-<div align="center">
-    <img src="/media/logo.png" alt="burla_logo" title="Burla" width="20%" height="auto" />
-    <h4>Burla is a python package that makes it easy to run code on other computers.</h4>
-    <p>Burla only has one function:  <code>remote_parallel_map</code>.<br>
-    This function only requires two arguments, here's how it works:</p>
-    <br></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/media/remote_parallel_map.png" alt="remote_parallel_map" title="Example" width="90%" height="auto" />
-    <br></br>
-    <p>This will execute <code>my_function</code> on every input in <code>my_inputs</code>, at the same time, each on a separate computer in the cloud.<br>
-    Burla is <b>fast</b> and <b>scalable</b>. Code starts running within <u>1 second</u> of calling <code>remote_parallel_map</code> on up to <u>1000 CPU's</u>.
-    <br></br>
-    The goal of Burla is to make it seamless to run code on any hardware, in any environment, and have it <i>just work</i>™.<br>
-    Here are some features we'll need:
-    </p>
-</div>
-<table align="center">
-<tr>
-<td>
+<img src="../media/logo.png" alt="burla_logo" title="Burla" width="13%" height="auto" />
 
-- 🐳 Docker Support: Run code in any docker image by passing <code>image=&lt;image-uri&gt;</code>.
-- ⚙️ GPU Support: Run code on GPU-enabled machines by passing <code>gpu="A100"</code>.
-- 👨‍💻 Local Developer Experience:
-  - Errors on remote computers are re-raised locally.
-  - stdout/stderr streamed back to your local machine.
-- 📦 Packages Sync Automatically: Local python environment quickly cloned on remote machines.
-- 💾 Simple Network Storage:
-  - Remote machines attached to the same fast, persistent, network disk.
-  - Manage files in your disk through a simple CLI: <code>> burla nas upload/download/ls/rm ...</code>
-- ⚡ Always fast: Images, and environments should be cached to maintain &lt; 1 second latency.
-- 🔧 Simple Installation: Setup burla in your cloud with one command: <code>> burla install gcp/aws</code>
+#### Burla is a python package that makes it easy to run code on (lots of) other computers.
 
-</td>
-</tr>
-</table>
-<div align="center">
-    <p>
-    Burla is currently under devlopment and is not ready to be used.<br>
-    To sign up for our waitlist go to <a href="https://burla.dev/">burla.dev</a>
-    </p>
-</div>
+In Burla, <ins>there is only one python function</ins>: `remote_parallel_map`.  
+This function requires just two arguments, here's how it works:
+
+```python
+from burla import remote_parallel_map
+
+# Arg 1: Any python function:
+def my_function(my_input):
+    ...
+
+# Arg 2: List of inputs for `my_function`
+my_inputs = [1, 2, 3, ...]
+
+# Calls `my_function` on every input in `my_inputs`, in parallel, each on a separate computer in the cloud.
+remote_parallel_map(my_function, my_inputs)
+```
+
+- Burla is **fast** and **scalable**.  
+  Code starts running within <u>1 second</u>, on up to <u>1000 CPU's</u>.
+- Burla is **free and open source software**.  
+  With a budget-friendly managed service to help us fund development.
+- Burla is **easy to install**.  
+  Setup in your cloud with one command, try our managed service with two commands.
+- Burla **supports GPU's**.  
+  Just add one argument: `remote_parallel_map(my_function, my_inputs, gpu="A100")`
+- Burla supports **custom Docker images**.  
+  Just add one argument: `remote_parallel_map(my_function, my_inputs, image="./Dockerfile")`  
+  Containers are cached to keep latency below 1 second.
+- Burla will **automatically clone your python env**.  
+  Local python environments are quickly cloned on remote machines.  
+  Python environments are cached to keep latency below 1 second.
+- Developing code remotely with Burla **feels like local development**.  
+  Errors on raised on remote computers are re-raised locally.  
+  stdout/stderr is streamed back to your local machine in real-time.
+- Burla offers **simple network storage**.  
+  Remote machines are attached to the same fast, persistent, network disk.  
+  Manage files in your disk through a simple CLI: `> burla nas upload / download / ls / rm ...`
+
+**Burla is currently under devlopment and is not ready to be used.**  
+To join our mailing list go to [burla.dev](https://burla.dev/).
