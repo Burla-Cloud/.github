@@ -1,10 +1,10 @@
 <br></br>
 
-<img src="../media/logo.png" alt="burla_logo" title="Burla" width="13%" height="auto" />
+<img src="/media/logo.png" alt="burla_logo" title="Burla" width="13%" height="auto" />
 
 #### Burla is a python package that makes it easy to run code on (lots of) other computers.
 
-In Burla, <ins>there is only one python function</ins>: `remote_parallel_map`.  
+In Burla, <ins>there is only one function</ins>: `remote_parallel_map`.  
 This function requires just two arguments, here's how it works:
 
 ```python
