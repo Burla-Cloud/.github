@@ -24,7 +24,7 @@ remote_parallel_map(my_function, my_inputs)
 - Burla is **fast** and **scalable**.  
   Code starts running within <u>1 second</u>, on up to <u>1000 CPU's</u>.
 - Burla is **free and open source software**.  
-  With a budget-friendly managed service to help us fund development.
+  We offer managed service to help pay for development.
 - Burla is **easy to install**.  
   Setup in your cloud with one command, try our managed service with two commands.
 - Burla **supports GPU's**.  
