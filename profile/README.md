@@ -2,6 +2,11 @@
 
 <img src="/media/logo.png" alt="burla_logo" title="Burla" width="20%" height="auto" />
 
+#### Burla is currently under devlopment and is not ready to be used.
+
+To join our mailing list go to [burla.dev](https://burla.dev/).  
+If you have any questions, email me at: jake@burla.dev
+
 #### Burla is a python package that makes it easy to run code on (lots of) other computers.
 
 In Burla, <ins>there is only one function</ins>: `remote_parallel_map`.  
@@ -41,6 +46,3 @@ remote_parallel_map(my_function, my_inputs)
 - Burla offers **simple network storage**.  
   Remote machines are attached to the same fast, persistent, network disk.  
   Manage files in your disk through a simple CLI: `> burla nas upload / download / ls / rm ...`
-
-**Burla is currently under devlopment and is not ready to be used.**  
-To join our mailing list go to [burla.dev](https://burla.dev/).
