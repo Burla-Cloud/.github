@@ -2,7 +2,7 @@
 
 <img src="/media/logo.png" alt="burla_logo" title="Burla" width="20%" height="auto" />
 
-#### Goal
+#### Goal:
 
 It’s 2024, it should be trivial, even for complete beginners, to scale python over thousands of computers in the cloud, with any hardware, and any software environment. Moreover, the software used to do this, should be free and open source.
 
