@@ -1,6 +1,6 @@
 <br></br>
 
-<img src="../media/logo.svg" alt="burla_logo" title="Burla" width="30%" height="auto" />
+<img src="/media/logo.svg" alt="burla_logo" title="Burla" width="30%" height="auto" />
 
 #### Goal:
 
