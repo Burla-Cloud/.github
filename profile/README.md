@@ -1,12 +1,10 @@
-<br></br>
-
 <p align="center"><img src="/media/readme_banner.png" width=1000></p>
 
-#### Goal:
+### Goal:
 
 It’s 2024, it should be trivial, even for complete beginners, to scale python over thousands of computers in the cloud, with any hardware, and any software environment. Moreover, the software used to do this, should be free and open source.
 
-#### Burla is a python package that makes it easy to run code on (lots of) other computers.
+### Burla is a python package that makes it easy to run code on (lots of) other computers.
 
 Burla only has one function: `remote_parallel_map`.  
 This function requires just two arguments, here's how it works:
