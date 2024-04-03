@@ -45,7 +45,21 @@ remote_parallel_map(my_function, my_inputs)
   By default, all remote machines are attached to the same persistent network disk.  
   Upload & download files to this disk through a simple CLI: `> burla nas upload / download / ls / rm ...`
 
-#### <span style="color:red">Burla is currently under development and is not ready to be used.</span>
+### Project Components:
+
+Unilke many open-source projects Burla does not to use a monorepo.  
+Instead major components are split across 4 separate GitHub repositories:
+
+1. [Burla](https://github.com/burla-cloud/burla)  
+   The python package (the client).
+2. [main_service](https://github.com/burla-cloud/main_service)  
+   Service representing a single cluster, manages nodes, routes requests to node_services.
+3. [node_service](https://github.com/burla-cloud/node_service)  
+   Service running on each node, manages containers, routes requests to container_services.
+4. [container_service](https://github.com/burla-cloud/container_service)  
+   Service running inside each container, executes user submitted functions.
+
+### Burla is currently under development and is not ready to be used.
 
 To join our mailing list go to [burla.dev](https://burla.dev/).  
 If you have any questions, email me at: [jake@burla.dev](mailto:jake@burla.dev), or [join us on Discord](https://discord.gg/xSuJukdS9b).
