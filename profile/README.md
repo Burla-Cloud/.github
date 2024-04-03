@@ -1,6 +1,6 @@
 <br></br>
 
-<img src="/media/logo.svg" alt="burla_logo" title="Burla" width="30%" height="auto" />
+<p align="center"><img src="/media/readme_banner.png" width=1000></p>
 
 #### Goal:
 
@@ -47,7 +47,7 @@ remote_parallel_map(my_function, my_inputs)
   By default, all remote machines are attached to the same persistent network disk.  
   Upload & download files to this disk through a simple CLI: `> burla nas upload / download / ls / rm ...`
 
-#### Burla is currently under devlopment and is not ready to be used.
+#### <span style="color:red">Burla is currently under development and is not ready to be used.</span>
 
 To join our mailing list go to [burla.dev](https://burla.dev/).  
 If you have any questions, email me at: [jake@burla.dev](mailto:jake@burla.dev), or [join us on Discord](https://discord.gg/xSuJukdS9b).
