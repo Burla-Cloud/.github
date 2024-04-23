@@ -4,7 +4,9 @@
 
 It’s 2024, it should be trivial, even for complete beginners, to scale python over thousands of computers in the cloud, with any hardware, and any software environment. Moreover, the software used to do this, should be free and open source.
 
-### Burla is a python package that makes it easy to run code on (lots of) other computers.
+### Overview:
+
+#### Burla is a python package that makes it easy to run code on (lots of) other computers.
 
 Burla only has one function: `remote_parallel_map`.  
 This function requires just two arguments, here's how it works:
@@ -45,9 +47,9 @@ remote_parallel_map(my_function, my_inputs)
   By default, all remote machines are attached to the same persistent network disk.  
   Upload & download files to this disk through a simple CLI: `> burla nas upload / download / ls / rm ...`
 
-### Project Components:
+### Components / How it works:
 
-Unilke many open-source projects Burla does not to use a monorepo.  
+Unlike many open-source projects Burla does not to use a monorepo.  
 Instead major components are split across 4 separate GitHub repositories:
 
 1. [Burla](https://github.com/burla-cloud/burla)  
@@ -59,7 +61,9 @@ Instead major components are split across 4 separate GitHub repositories:
 4. [container_service](https://github.com/burla-cloud/container_service)  
    Service running inside each container, executes user submitted functions.
 
-### Burla is currently under development and is not ready to be used.
+Read about how Burla works: [How-Burla-works.md]("https://docs.burla.dev/How-Burla-Works")
+
+### Burla is currently under devlopment and is not ready to be used.
 
 To join our mailing list go to [burla.dev](https://burla.dev/).  
-If you have any questions, email me at: [jake@burla.dev](mailto:jake@burla.dev), or [join us on Discord](https://discord.gg/xSuJukdS9b).
+If you have any questions, email me at: jake@burla.dev, or [join us on Discord](https://discord.gg/xSuJukdS9b).
