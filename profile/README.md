@@ -66,4 +66,4 @@ Read about how Burla works: [How-Burla-works.md]("https://docs.burla.dev/How-Bur
 ### Burla is currently under devlopment and is not ready to be used.
 
 To join our mailing list go to [burla.dev](https://burla.dev/).  
-If you have any questions, email me at: jake@burla.dev, or [join us on Discord](https://discord.gg/xSuJukdS9b).
+If you have any questions, email me at: jake@burla.dev, or [join us on Discord](https://discord.gg/TsbCUwBUdy).
