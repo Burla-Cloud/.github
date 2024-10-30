@@ -6,64 +6,48 @@ It’s 2024, it should be trivial, even for complete beginners, to scale python 
 
 ### Overview:
 
-#### Burla is a python package that makes it easy to run code on (lots of) other computers.
+#### Burla is a library for running python functions on remote computers.
 
-Burla only has one function: `remote_parallel_map`.  
-This function requires just two arguments, here's how it works:
+Burla only has one function: **remote_parallel_map**.  
+Given some python function, and a list of arguments, `remote_parallel_map` calls the given function, on every argument in the list, at the same time, each on a separate virtual machine in the cloud.
 
+Here's an example:
 ```python
 from burla import remote_parallel_map
 
-# Arg 1: Any python function:
-def my_function(my_input):
-    ...
+my_arguments = [1, 2, 3, 4]
 
-# Arg 2: List of inputs for `my_function`
-my_inputs = [1, 2, 3, ...]
+def my_function(my_argument: int):
+    print(f"Running remote computer #{my_argument} in the cloud!")
+    return my_argument * 2
+    
+results = remote_parallel_map(my_function, my_arguments)
 
-# Calls `my_function` on every input in `my_inputs`,
-# at the same time, each on a separate computer in the cloud.
-remote_parallel_map(my_function, my_inputs)
+print(f"return values: {list(results)}")
 ```
 
-- Burla is **fast** and **scalable**.  
-  Code starts running within <u>1 second</u>, on up to <u>1000 CPU's</u>.
-- Running code remotely with Burla **feels like local development**. This means that:
-  - Errors thrown on remote computers are raised on your local machine.
-  - Anything you print appears in the terminal on your local machine.
-  - Your python environment is automaticaly cloned on all remote computers.  
-    This allows you to call any local python package in a function sent to `remote_parallel_map`.  
-    After installing once, environments are cached to keep latency below 1 second.
-- Burla is **easy to install**.  
-  Try our managed service with [two commands](https://docs.burla.dev/Getting-Started#getting-started-fully-managed). Install Burla in your cloud with [three commands](https://docs.burla.dev/Getting-Started#getting-started-self-managed-gcp-only).
-- Burla supports **custom resource requirements**.  
-  Allocate up to 96 CPUs and 360G of ram to each individual function call with [two simple arguments](https://docs.burla.dev/API-Reference).
-- Burla **supports GPU's**.  
-  Just add one argument: `remote_parallel_map(my_function, my_inputs, gpu="A100")`
-- Burla supports **custom Docker images**.  
-  Just add one argument: `remote_parallel_map(my_function, my_inputs, dockerfile="./Dockerfile")`  
-  After building once, images are cached to keep latency below 1 second.
-- Burla offers **simple network storage**.  
-  By default, all remote machines are attached to the same persistent network disk.  
-  Upload & download files to this disk through a simple CLI: `> burla nas upload / download / ls / rm ...`
+[Click here to run this example in Google Colab.](https://colab.research.google.com/drive/17MWiQFyFKxTmNBaq7POGL0juByWIMA3w?usp=sharing)
 
-### Components / How it works:
+In the above example, each call to `my_function` runs on a separate virtual machine, in parallel.  
+With Burla, running code on remote computers feels the same as running locally. This means:
+- Any errors your function throws will appear on local machine just like they normally do.
+- Anything you print appears in your local stdout, just like it normally does.
+- responses are pretty quick (you can call a million simple functions in a couple seconds).
 
-Unlike many open-source projects Burla does not to use a monorepo.  
-Instead major components are split across 4 separate GitHub repositories:
+[Click here to learn more about remote_parallel_map.](https://docs.burla.dev/overview)
 
-1. [Burla](https://github.com/burla-cloud/burla)  
-   The python package (the client).
-2. [main_service](https://github.com/burla-cloud/main_service)  
-   Service representing a single cluster, manages nodes, routes requests to node_services.
-3. [node_service](https://github.com/burla-cloud/node_service)  
-   Service running on each node, manages containers, routes requests to container_services.
-4. [container_service](https://github.com/burla-cloud/container_service)  
-   Service running inside each container, executes user submitted functions.
+#### Where does my code run?
+Burla is open-source cluster-compute software designed to be self-hosted in the cloud.  
+To use Burla you must have a cluster running that the client knows about.  
+Currently, our library is hardcoded to only call our free public cluster (cluster.burla.dev) which we've deployed to make Burla easy for anyone to try. This cluster is currently configured to run 16 nodes, each with 32 cpus & 128G ram.  
+Burla clusters are multi-tenant / can run many jobs from separate users.  
+Nodes in a burla cluster are single-tenant / your job will never be on the same machine as another job.
 
-Read about how Burla works: [How-Burla-works.md]("https://docs.burla.dev/How-Burla-Works")
+[Click here to learn more about how burla-clusters work.](https://docs.burla.dev/overview#how-does-it-work)
 
-### Burla is currently under devlopment and is not ready to be used.
+&nbsp;
+&nbsp;
 
-To join our mailing list go to [burla.dev](https://burla.dev/).  
-If you have any questions, email me at: jake@burla.dev, or [join us on Discord](https://discord.gg/TsbCUwBUdy).
+---
+Questions?
+[Schedule a call with us](https://cal.com/jakez/burla?duration=30), or [email us](mailto:jake@burla.dev). We're always happy to talk.
