@@ -2,7 +2,7 @@
 
 ### Goal:
 
-It’s 2024, it should be trivial, even for complete beginners, to scale python over thousands of computers in the cloud, with any hardware, and any software environment. Moreover, the software used to do this, should be free and open source.
+It’s 2025, it should be trivial, even for complete beginners, to scale python over thousands of computers in the cloud, with any hardware, and any software environment. Moreover, the software used to do this, should be free and open source.
 
 ### Overview:
 
