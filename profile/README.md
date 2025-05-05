@@ -41,7 +41,6 @@ With Burla, running code on remote computers feels the same as running locally. 
 #### Where does my code run?
 Burla is open-source cluster-compute software designed to be self-hosted in the cloud.  
 To use Burla you must have a cluster running that the client knows about.  
-Currently, our library is hardcoded to only call our free public cluster (cluster.burla.dev) which we've deployed to make Burla easy for anyone to try. This cluster is currently configured to run 16 nodes, each with 32 cpus & 128G ram.  
 Burla clusters are multi-tenant / can run many jobs from separate users.  
 Nodes in a burla cluster are single-tenant / your job will never be on the same machine as another job.
 
