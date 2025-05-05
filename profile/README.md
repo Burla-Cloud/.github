@@ -6,6 +6,8 @@ It’s 2025, it should be trivial, even for complete beginners, to scale python 
 
 ### Overview:
 
+[Watch our 2min demo on YouTube!](https://www.youtube.com/watch?v=1HQkTL-7_VY)
+
 #### Burla is a library for running python functions on remote computers.
 
 Burla only has one function: **remote_parallel_map**.  
