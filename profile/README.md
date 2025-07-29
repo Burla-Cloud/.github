@@ -2,7 +2,7 @@
 
 Burla is the simplest way to run Python on lot's of computers in the cloud.
 
-<figure><img src="/media/main_demo.gif" alt="" style="width:60%" /><figcaption></figcaption></figure>
+<figure><img src="/media/main_demo.gif" alt="" style="width:70%" /><figcaption></figcaption></figure>
 
 #### How It Works:
 
