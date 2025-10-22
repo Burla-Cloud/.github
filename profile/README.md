@@ -11,7 +11,7 @@ It's open-source, works with GPU's, custom docker containers, and up to 10,000 C
 Scale machine learning systems, or other research efforts without weeks of onboarding or setup.  
 Burla's open-source web platform makes it simple to monitor long running pipelines or training runs.
 
-<figure><img src="/media/FINAL-lowfr.gif" alt="" style="width:70%" /><figcaption></figcaption></figure>
+<figure><img src="/media/platform-demo.gif" alt="" style="width:70%" /><figcaption></figcaption></figure>
 
 ### **How it works:**
 
