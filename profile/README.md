@@ -6,7 +6,7 @@ It's open-source, works with GPU's, custom docker containers, and up to 10,000 C
 
 <figure><img src="/media/main_demo.gif" alt="" style="width:70%" /><figcaption></figcaption></figure>
 
-### A fully fledged data-platform any team can learn in minutes:
+### A data-platform any team can learn in minutes:
 
 Scale machine learning systems, or other research efforts without weeks of onboarding or setup.  
 Burla's open-source web platform makes it simple to monitor long running pipelines or training runs.
