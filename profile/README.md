@@ -1,14 +1,15 @@
 
 ### Run any Python function on 1000 computers in 1 second.
 
-Burla is the world's simplest cluster compute software.\
-It's open-source, works with GPU's, custom containers, and up to 10,000 CPU's at once.
+Burla is the simplest way to scale python, it's has one function: `remote_parallel_map`  
+It's open-source, works with GPU's, custom docker containers, and up to 10,000 CPU's at once.
 
 <figure><img src="/media/main_demo.gif" alt="" style="width:70%" /><figcaption></figcaption></figure>
 
 ### A fully fledged data-platform any team can learn in minutes:
 
-Burla comes with a simple web-platform so your entire team can schedule jobs, create pipelines, scale machine learning systems, or other research efforts without weeks of onboarding or setup.
+Scale machine learning systems, or other research efforts without weeks of onboarding or setup.  
+Burla's open-source web platform makes it simple to monitor long running pipelines or training runs.
 
 <figure><img src="/media/FINAL-lowfr.gif" alt="" style="width:70%" /><figcaption></figcaption></figure>
 
@@ -81,13 +82,13 @@ Burla works with any linux based Docker image.
 
 ### Try it now
 
-Email **jake@burla.dev** and we'll send you a free managed instance! Compute is on us.  
-If you decide you like it, you can self-host Burla (currently Google Cloud only) with just two commands:
+[Sign up here](https://burla.dev/signup) and we'll send you a free managed instance! Compute is on us.  
+If you decide you like it, you can deploy self-hosted Burla (currently Google Cloud only) with just two commands:
 
 1. `pip install burla`  
 2. `burla install`
 
-See the [Getting Started guide](https://docs.burla.dev/getting-started#quickstart) for more info.
+See the [Getting Started guide](https://docs.burla.dev/getting-started) for more info.
 
 ***
 
