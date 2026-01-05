@@ -1,5 +1,5 @@
 
-### Run any Python function on 1000 computers in 1 second.
+### Enable anyone to process terabytes of data in minutes.
 
 Burla makes it trivial to run Python functions on thousands of computers in the cloud.\
 It's a package that only has **one function**:
