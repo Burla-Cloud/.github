@@ -12,7 +12,7 @@ Burla is a Python package with **one function**: `remote_parallel_map`. Here's a
 
 <p align="center">This realtime example runs <code>my_function</code> on 1,000 separate computers in one second.</p>
 
-### Enable anyone to process terabytes of data in minutes, not days.
+## Enable anyone to process terabytes of data in minutes, not days.
 
 Burla is simple enough for anyone to learn, yet extremely scalable and flexible.
 
@@ -25,7 +25,7 @@ Easily monitor long-running workloads and manage compute resources in the dashbo
   <img src="https://raw.githubusercontent.com/Burla-Cloud/user-docs/main/.gitbook/assets/new_platform_demo.gif" alt="Burla dashboard demo" />
 </p>
 
-### How it works
+## How it works
 
 With Burla, **running code in the cloud feels the same as coding on your laptop**:
 
@@ -42,8 +42,6 @@ When functions run with `remote_parallel_map`:
 - Packages and local modules are cloned onto remote machines.
 - Code starts running in under one second, even with millions of inputs.
 
-### Features
-
 | Feature | Description |
 | --- | --- |
 | **📦 Automatic Package Sync** | Burla quickly clones your Python packages to every remote machine where your code runs. |
@@ -51,7 +49,7 @@ When functions run with `remote_parallel_map`:
 | **📂 Network Filesystem** | Burla mounts cloud storage to `./shared` in every container for easy data exchange. |
 | **⚙️ Variable Hardware Per Function** | Use `func_cpu` and `func_ram` to give different functions different hardware sizes. |
 
-### Convert any workload into a scalable data pipeline
+## Convert any workload into a scalable data pipeline
 
 Have a workload that takes forever to run?
 
@@ -71,7 +69,7 @@ result = remote_parallel_map(combine_results, [results], func_cpu=64)
 
 <p align="center">The example above demonstrates a basic map-reduce operation.</p>
 
-### Burla only takes 2 minutes to try
+## Burla only takes 2 minutes to try
 
 [![Try Burla for free](https://img.shields.io/badge/Try%20Burla%20for%20free-111827?style=for-the-badge)](https://login.burla.dev/)
 
