@@ -91,15 +91,6 @@ When functions are run with `remote_parallel_map`:
 - **⚙️ Variable Hardware Per-Function**  
   The `func_cpu` and `func_ram` args make it possible to assign big hardware to some functions, and less to others.
 
-## Pricing
-
-Free for hobbyists. Compute prices are the same as Google Cloud.
-
-| Self-Hosted (in your cloud) | Managed (in Burla's cloud) |
-| --- | --- |
-| `$100/month` per enterprise user | `$100/month` per enterprise user |
-| Free for all non-commercial use | 100% identical pricing to [Google Cloud](https://cloud.google.com/pricing) |
-|  | `$500` in free credits for qualified users |
 
 ### Self-Host Burla Today
 
